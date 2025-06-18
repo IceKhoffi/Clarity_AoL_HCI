@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Detection</title>
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet (Maps) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
+    <!-- Sparse csv -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-wind"></i>
+            <span>Clarity</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+            <a href="feedback.html"><i class="fa-solid fa-globe"></i>Forum</a>
+            <a href="feedback.html?action=send"><i class="fas fa-comment"></i> Feedback</a>
+        </div>
+        <div class="nav-right">
+            <div class="datetime">
+                <div id="current-date"></div>
+                <div id="current-time"></div>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Air Quality Detection</h1>
+        </header>
+
+        <div class="location-selector">
+            <h2>Location:</h2>
+            <select id="location-dropdown">
+                <option value="">Select a location</option>
+                </select>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3><i class="fas fa-lungs"></i> Air Quality</h3>
+                <div class="card-content">
+                    <div class="quality-indicator">
+                        <span id="quality-badge" class="quality-badge quality-good">Good</span>
+                        <span id="quality-value" class="quality-value">0</span>
+                    </div>
+                    <p id="quality-description">Select a location to see air quality information.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-temperature-high"></i> Temperature</h3>
+                <div class="card-content">
+                    <div id="temperature-value" class="quality-value">--°C</div>
+                    <div class="data-item">
+                        <span class="data-label">Humidity</span>
+                        <span id="humidity-value" class="data-value">--%</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Pressure</span>
+                        <span id="pressure-value" class="data-value">-- hPa</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-flask"></i> Air Composition</h3>
+                <div class="card-content">
+                    <div class="data-item">
+                        <span class="data-label">O₂ (Oxygen)</span>
+                        <div class="data-value-container">
+                            <span id="o2-value" class="data-value">--%</span>
+                            <span id="o2-trend" class="trend-indicator"></span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">N₂ (Nitrogen)</span>
+                        <div class="data-value-container">
+                            <span id="n2-value" class="data-value">--%</span>
+                            <span id="n2-trend" class="trend-indicator"></span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">CO₂ (Carbon Dioxide)</span>
+                        <div class="data-value-container">
+                            <span id="co2-value" class="data-value">-- ppm</span>
+                            <span id="co2-trend" class="trend-indicator"></span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">PM2.5</span>
+                        <div class="data-value-container">
+                            <span id="pm25-value" class="data-value">-- μg/m³</span>
+                            <span id="pm25-trend" class="trend-indicator"></span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">PM10</span>
+                        <div class="data-value-container">
+                            <span id="pm10-value" class="data-value">-- μg/m³</span>
+                            <span id="pm10-trend" class="trend-indicator"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-lightbulb"></i> Daily Tip</h3>
+                <div class="card-content">
+                    <p id="daily-tip">Select a location to see today's recommendation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="notifications">
+            <h2><i class="fas fa-bell"></i> Notifications</h2>
+            <div class="notification-list">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;Clarity | 2025 Air Quality Detection</p>
+    </footer>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>
+
+<!-- 
+https://cdnjs.com/libraries/font-awesome
+https://cdnjs.com/libraries/PapaParse
+https://leafletjs.com/download.html
+-->

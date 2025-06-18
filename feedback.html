@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Air Quality Detection</title>
+    <link rel="stylesheet" href="../css/feedback.css">
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-wind"></i>
+            <span>Clarity</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+            <a href="feedback.html"><i class="fa-solid fa-globe"></i>Forum</a>
+            <a href="feedback.html?action=send"><i class="fas fa-comment"></i> Feedback</a>
+        </div>
+        <div class="nav-right">
+            <div class="datetime">
+                <div id="current-date"></div>
+                <div id="current-time"></div>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Community Feedback</h1>
+            <p>Share your thoughts or read what others have to say about our air quality service</p>
+        </header>
+
+        <div class="toggle-container">
+            <button class="toggle-btn active" id="forum-btn">
+                <i class="fas fa-comments"></i> Forum
+            </button>
+            <button class="toggle-btn" id="feedback-btn">
+                <i class="fas fa-paper-plane"></i> Send Feedback
+            </button>
+        </div>
+
+        <div class="feedback-container">
+            <div class="forum-container" id="forum-section">
+                <!-- Forum items from JS -->
+            </div>
+
+            <!-- Feedback Form Section -->
+            <div class="form-container" id="form-section">
+                <form id="feedback-form">
+                    <div class="form-group">
+                        <h2>Send Feedback</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Type of Complaint</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="app-issue" name="complaint-type" value="Application Issue" required>
+                                <label for="app-issue">Application Issue</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="server-error" name="complaint-type" value="Server Error">
+                                <label for="server-error">Server Error</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="prediction" name="complaint-type" value="Air Quality Prediction">
+                                <label for="prediction">Air Quality Prediction</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="others" name="complaint-type" value="Others">
+                                <label for="others">Others</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" required placeholder="Please describe your issue or feedback in detail..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Air Quality Detection. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+        }
+    </script> -->
+
+
+    <script src="../js/feedback.js"></script>
+</body>
+</html>

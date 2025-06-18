@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Air Quality Detection</title>
+    <link rel="stylesheet" href="../css/news.css">
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-wind"></i>
+            <span>Clarity</span>
+        </div>
+        
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+            <a href="feedback.html"><i class="fa-solid fa-globe"></i>Forum</a>
+            <a href="feedback.html?action=send"><i class="fas fa-comment"></i> Feedback</a>
+        </div>
+
+        <div class="nav-right">
+            <div class="datetime">
+                <div id="current-date"></div>
+                <div id="current-time"></div>
+            </div>
+
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Health and Air Quality News</h1>
+        </header>
+
+        <!-- News Part -->
+         <div id="card-container">
+            <div class="two-column-layout">
+                <!-- Health Advice Container -->
+                <div class="left-column">
+                    <div class="news-card">
+                        <h2 class="news-title"> Health Advice</h2>
+
+                        <div class="news-content">
+                            <ul>
+                                <!-- Health Advice from JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Air Quality News Container -->
+                <div class="right-column">
+                    <div class="news-card">
+                        <h2 class="news-title"> Air Quality News</h2>
+
+                        <div class="news-content" id="news-container">
+                            <ul>
+                                <!-- News from JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Air Quality Detection. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+        }
+    </script> -->
+
+    <script src="../js/news.js"></script>
+
+</body>
+</html>
