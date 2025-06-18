@@ -1,12 +1,12 @@
-# Clarity: Real-time Air Quality Analysis
+# Clairity: Real-time Air Quality Analysis
 
 ## Menganalisa Kualitas Udara untuk Kesehatan yang Lebih Baik
 
-![clarity-logo](https://github.com/user-attachments/assets/ba16647e-95b8-48d6-9316-dc6665d3ce01) **Clarity** (a combination of "Clear" and "Air" to signify clean air) is a web application dedicated to providing users with real-time air quality analysis and relevant information to help them understand and mitigate the effects of surrounding pollution. Our mission is to empower individuals with the knowledge to make informed decisions about their health and well-being.
+![Clairity-logo](https://github.com/user-attachments/assets/ba16647e-95b8-48d6-9316-dc6665d3ce01) **Clarity** (a combination of "Clear" and "Air" to signify clean air) is a web application dedicated to providing users with real-time air quality analysis and relevant information to help them understand and mitigate the effects of surrounding pollution. Our mission is to empower individuals with the knowledge to make informed decisions about their health and well-being.
 
 ## Website Description
 
-Clarity provides users with real-time air quality analysis to give information about surrounding pollution.
+Clairity provides users with real-time air quality analysis to give information about surrounding pollution.
 
 ## Key Features
 
