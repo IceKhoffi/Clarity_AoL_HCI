@@ -2,7 +2,7 @@
 
 ## Menganalisa Kualitas Udara untuk Kesehatan yang Lebih Baik
 
-!![image](https://github.com/user-attachments/assets/a2eb223b-ebaf-4c4f-aa6b-36d63726feef) **Clarity** (a combination of "Clear" and "Air" to signify clean air) is a web application dedicated to providing users with real-time air quality analysis and relevant information to help them understand and mitigate the effects of surrounding pollution. Our mission is to empower individuals with the knowledge to make informed decisions about their health and well-being.
+![image-removebg-preview (3)](https://github.com/user-attachments/assets/4d7030c4-45cf-4a59-a0c3-38a0e55cdf01) **Clarity** (a combination of "Clear" and "Air" to signify clean air) is a web application dedicated to providing users with real-time air quality analysis and relevant information to help them understand and mitigate the effects of surrounding pollution. Our mission is to empower individuals with the knowledge to make informed decisions about their health and well-being.
 
 ## Website Description
 
